@@ -4,7 +4,7 @@ from pyrogram import Client, filters, types as t
 from bot import StartTime
 
 startText = """
-An AntiNSFW bot Powered by @LexicaAPI to protect your groups from NSFW content.
+An AntiNSFW bot Powered by @CoderNova to protect your groups from NSFW content.
 """
 
 @Client.on_message(filters.command(["start","help","repo","source"]))
@@ -14,7 +14,7 @@ async def start(_: Client, m: t.Message):
         reply_markup=t.InlineKeyboardMarkup(
             [
                 [
-                    t.InlineKeyboardButton(text="Source",url="https://github.com/Qewertyy/AntiNSFWRobot")
+                    t.InlineKeyboardButton(text="Source",url="https://t.me/Nova_coder")
                 ]
             ]
         )
